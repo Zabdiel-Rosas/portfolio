@@ -1,0 +1,13 @@
+html, body {
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #346;
+    color: #fff;
+}
