@@ -1,5 +1,17 @@
+/* Custom properties/variables  */
+:root {
+    --main-white: #f0f0f0;
+    --darkest-blue: #040656;
+    --darker-blue: #0C0E7C;
+    --main-color: #1D1F7D;
+    --lighter-color: #3A3C88;
+    --gray-color: #62648E;
+}
+
+
 html, body {
     box-sizing: border-box;
+    scroll-behavior: smooth;
     line-height: 1.5;
     font-size: 10px;
     margin: 0;
@@ -8,6 +20,38 @@ html, body {
 
 body {
     font-size: 1.6rem;
-    background: #346;
-    color: #fff;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    background: var(--main-white);
+    color: var(--main-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--darkest-blue);    
+    z-index: 10;
+}
+
+#navbar {
+    padding: 2rem;
+    text-align: center;    
+}
+
+#navbar .nav-link {
+    text-decoration: none;
+    color: var(--main-white);    
+    margin-left: .8rem;
+    padding: 1.5rem;
+    padding-bottom: .8rem;    
+}
+
+#navbar .nav-link:hover {
+    background: var(--lighter-color);
+}
+
+.selected {
+    border-bottom: solid 1px white;
 }
