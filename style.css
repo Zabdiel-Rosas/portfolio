@@ -39,7 +39,7 @@ header {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 img {
@@ -109,9 +109,13 @@ img {
 
 .btn {
     border: none;
-    padding: 1rem 2.8rem;
-    font-family: inherit;
+    padding: 1rem 2.8rem;    
     background: var(--darker-blue);
     color: var(--white);    
     margin-bottom: 2rem;
+}
+
+.btn:hover {
+    background: var(--white);
+    color: var(--darker-blue);
 }
