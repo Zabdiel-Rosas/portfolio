@@ -38,6 +38,10 @@ header {
     z-index: 10;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
     display: block;
     width: 100%;
@@ -81,19 +85,33 @@ img {
 }
 
 .section-title {
-    color: var(--white);    
+    color: var(--darker-blue);    
 }
 
 .project-tile {
     width: 90%;
-    margin: 2rem;    
+    margin: 2rem;        
+}
+
+.project-tile:hover {
+    background: var(--white);
+    padding: .2rem;
 }
 
 .p-description {
-    background: var(--darker-blue);
+    background: var(--lighter-color);
     color: var(--white);
     padding: .150rem;
     text-align: center;      
     z-index: -1;  
     border-radius: 2px;
+}
+
+.btn {
+    border: none;
+    padding: 1rem 2.8rem;
+    font-family: inherit;
+    background: var(--darker-blue);
+    color: var(--white);    
+    margin-bottom: 2rem;
 }
