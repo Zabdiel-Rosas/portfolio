@@ -4,8 +4,9 @@
     --darker-blue: #00011B;
     --main-color: #020335;
     --lighter-color: #0D0F66;
-    --gray-color: #62648E;
-    --main-white: #f0f0f0;
+    --white: #f0f0f0;
+    --gray: #346;
+    --gray-blue: #358;
 }
 
 
@@ -22,7 +23,7 @@ body {
     font-size: 1.6rem;
     font-family: 'Lobster', cursive;
     font-weight: 400;
-    background: var(--main-white);
+    background: var(--white);
     color: var(--lighter-color);
 }
 
@@ -37,6 +38,11 @@ header {
     z-index: 10;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
 #navbar {
     padding: 2rem;
     text-align: center;    
@@ -44,7 +50,7 @@ header {
 
 #navbar .nav-link {
     text-decoration: none;
-    color: var(--main-white);    
+    color: var(--white);    
     margin-left: .8rem;
     padding: 1rem;
     border-radius: 5px;       
@@ -63,4 +69,31 @@ header {
     flex-direction: column;    
     align-items: center;
     justify-content: center;    
+}
+
+#projects {
+    width: 100%;
+    background: var(--gray-blue); 
+    display: flex;       
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.section-title {
+    color: var(--white);    
+}
+
+.project-tile {
+    width: 90%;
+    margin: 2rem;    
+}
+
+.p-description {
+    background: var(--darker-blue);
+    color: var(--white);
+    padding: .150rem;
+    text-align: center;      
+    z-index: -1;  
+    border-radius: 2px;
 }
