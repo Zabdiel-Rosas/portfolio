@@ -47,6 +47,14 @@ img {
     width: 100%;
 }
 
+footer {
+    background: var(--darkest-blue);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+    margin: 0;    
+}
+
 #navbar {
     padding: 2rem;
     text-align: center;    
@@ -75,9 +83,11 @@ img {
     justify-content: center;    
 }
 
+/* Projects Section */
+
 #projects {
     width: 100%;
-    background: var(--gray-blue); 
+    background: var(--darker-blue); 
     display: flex;       
     flex-direction: column;
     align-items: center;
@@ -85,10 +95,11 @@ img {
 }
 
 .section-title {
-    color: var(--darker-blue);    
+    color: var(--white);    
+    padding-top: 4rem;
 }
 
-.project-tile {
+.project-tile {    
     width: 90%;
     margin: 2rem;        
 }
@@ -99,7 +110,7 @@ img {
 }
 
 .p-description {
-    background: var(--lighter-color);
+    background: var(--gray);
     color: var(--white);
     padding: .150rem;
     text-align: center;      
@@ -110,12 +121,32 @@ img {
 .btn {
     border: none;
     padding: 1rem 2.8rem;    
-    background: var(--darker-blue);
-    color: var(--white);    
+    background: var(--lighter-color);
+    color: var(--white);         
     margin-bottom: 2rem;
 }
 
 .btn:hover {
     background: var(--white);
-    color: var(--darker-blue);
+    color: var(--lighter-color); 
+}
+
+/* Contact Section */
+
+#contact {
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact a {
+    color: inherit;
+}
+
+#contact-img {
+    width: 10%;
+    height: auto;
+    margin: 0 auto;    
 }
