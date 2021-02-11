@@ -71,7 +71,7 @@ footer {
     border-radius: 5px;       
 }
 
-.selected {    
+#navbar .nav-link:hover {
     background: var(--lighter-color);
 }
 
@@ -185,4 +185,81 @@ footer {
 #contact-img:hover {
     width: 12%;
     height: auto;
+}
+
+/* Media Queries */
+@media(min-width: 500px){
+    
+    h2 {
+        font-size: 4rem;
+    }
+
+    #navbar{
+        padding: 3rem;
+        text-align: right;
+        font-size: 2.2rem;
+    }
+
+    /* Welcome section */
+    #welcome-section {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #profile-picture {
+        width: 35%;
+        border-radius: 5px;
+        margin-right: 2rem;
+    }
+
+    #profile-picture:hover {
+        width: 38%;
+    }
+
+    .text-container h1 {
+        font-size: 4rem;
+    }
+
+    .text-container p {
+        font-size: 3rem;
+    }
+
+    /* Projects Section */
+
+    .section-title {
+        padding-top: 5.2rem;
+        
+    }
+
+    #projects {
+        height: 100vh;
+    }
+
+    #projects .tile-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 4rem 0;
+        padding: 2rem 0;
+    }
+
+    .project-tile {    
+        width: 40%;
+        margin: 2rem;        
+    }
+
+    /* Contact Section*/
+
+    #contact {
+        height: 90vh;
+    }
+
+    #contact a {
+        font-size: 2.5rem;  
+    }
+
+    footer {
+        padding: 3rem;
+    }
 }
