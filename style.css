@@ -263,3 +263,27 @@ footer {
         padding: 3rem;
     }
 }
+
+@media(min-width: 850px) {
+
+    #profile-picture {
+        width: 18%;        
+    }
+
+    #profile-picture:hover {
+        width: 20%;        
+    }
+
+    #projects {
+        height: auto;
+    }
+
+    #contact-img {
+        width: 4%;
+          
+    }
+    
+    #contact-img:hover {
+        width: 5%;        
+    }
+}
