@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 /* Custom properties/variables  */
 :root {    
     --darkest-blue: #002;
@@ -21,7 +23,7 @@ html, body {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Lobster', cursive;
+    font-family: 'Lato', sans-serif;    
     font-weight: 400;
     background: var(--white);
     color: var(--lighter-color);
@@ -58,6 +60,7 @@ footer {
 #navbar {
     padding: 2rem;
     text-align: center;    
+    font-family: 'Lobster', cursive;
 }
 
 #navbar .nav-link {
@@ -86,6 +89,26 @@ footer {
 #profile-picture {
     border-radius: 50%;
     width: 180px;
+}
+
+.text-container {
+    text-align: center;     
+}
+
+.text-container h1 {
+    padding-top: 3rem;
+    font-size: 3rem;   
+    font-family: 'Lobster', cursive; 
+}
+
+.text-container p {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;    
+}
+
+.text-container h1, p {
+    margin: 0;    
 }
 
 /* Projects Section */
@@ -117,7 +140,8 @@ footer {
 .p-description {
     background: var(--gray);
     color: var(--white);
-    padding: .150rem;
+    padding: 1rem;
+    font-weight: 700;
     text-align: center;      
     z-index: -1;  
     border-radius: 2px;
@@ -125,7 +149,8 @@ footer {
 
 .btn {
     border: none;
-    padding: 1rem 2.8rem;    
+    padding: 1rem 2.8rem;   
+    font-family: 'Lobster', cursive; 
     background: var(--lighter-color);
     color: var(--white);         
     margin-bottom: 2rem;
@@ -140,6 +165,7 @@ footer {
 
 #contact {
     text-align: center;
+    font-family: 'Lobster', cursive;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -147,7 +173,7 @@ footer {
 }
 
 #contact a {
-    color: inherit;
+    color: inherit;    
 }
 
 #contact-img {
